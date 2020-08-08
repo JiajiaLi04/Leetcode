@@ -1,4 +1,5 @@
 class Solution(object):
+    # Brute force
     def generateParenthesis(self, n):
         def generate(A = []):
             if len(A) == 2*n:
