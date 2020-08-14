@@ -4,7 +4,8 @@ class Solution:
         for i in range(1,n):
             next_person, num, count = '', prev_person[0], 1
             for j in range(1,len(prev_person)):
-                if prev_person[j] == num:count += 1
+                if prev_person[j] == num:
+                    count += 1
                 else:
                     next_person += str(count) + num
                     num = prev_person[j]
@@ -14,3 +15,7 @@ class Solution:
         return prev_person
 
 
+if __name__ == '__main__':
+    func = Solution()
+    n =4
+    print(func.countAndSay(n))
