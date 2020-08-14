@@ -1,2 +1,2 @@
 # Leetcode Notes
-Python Codes for Leetcode.
+Python Codes for Leetcode...
