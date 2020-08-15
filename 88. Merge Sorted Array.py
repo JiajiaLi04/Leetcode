@@ -29,8 +29,9 @@ class Solution(object):
 		if p1 < m: 
 			nums1[p1 + p2:] = nums1_copy[p1:]
 		if p2 < n:
+			nums1[p1 + p2:] = nums2[p2:]
 
-if	__name__='__main__':
+if __name__ == '__main__':
 	func = Solution()
 	nums1 = [1,2,3,0,0,0]
 	m=3
