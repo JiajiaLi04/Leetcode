@@ -10,4 +10,3 @@ if __name__ == '__main__':
     func = Solution()
     nums = [9,1,9,2,2]
     print(func.singleNumber(nums))
-## note that 
