@@ -8,7 +8,7 @@ class Solution:
             dic[1]=29
         return sum(dic[:month-1])+day
 
-if __name__ == '__main__':
+if __name__ == '__main__':  
     func = Solution()
-    data = "2019-01-07"
+    data = "2019-02-07"
     print(func.dayOfYear(data))
