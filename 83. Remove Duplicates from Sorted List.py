@@ -8,7 +8,6 @@ class Solution:
         if head == None or head.next == None:
             return head
         dummyHead = ListNode(0)
-        
         dummyHead.next = head
         while head != None and head.next != None:
             if head.val == head.next.val:
@@ -17,3 +16,10 @@ class Solution:
                 head = head.next
         return dummyHead.next
 
+if __name__ == '__main__':
+	head = ListNode(1)
+	head.next = ListNode(2)
+	head.next.next = ListNode(2)
+	func = Solution()
+	output = func.deleteDuplicates(head)
+	print(output.val)
