@@ -10,5 +10,5 @@ class Solution:
 
 if __name__ == '__main__':
     func = Solution()
-    data = "2019-01-09"
+    data = "2019-01-07"
     print(func.dayOfYear(data))
