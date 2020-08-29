@@ -41,8 +41,6 @@ class Solution:
         head.next = None
         return newHead
 
-
-
 if __name__ == '__main__':
 	head = ListNode(1)
 	head.next = ListNode(2)
