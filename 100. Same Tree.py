@@ -34,13 +34,13 @@ class Solution:
         while queue1 and queue2:
             node1 = queue1.popleft()
             node2 = queue2.popleft()
-            if node1.val != node2.val:
+            if node1.val != node2.val: ## compare the value of two nodes
                 return False
             left1, right1 = node1.left, node1.right
             left2, right2 = node2.left, node2.right
-            if (not left1) ^ (not left2):
+            if (not left1) ^ (not left2): ## decide whether these two nodes are both exits. XOR operation. return true if both are true.
                 return False
-            if (not right1) ^ (not right2):
+            if (not right1) ^ (not right2): ## decide whether these two nodes are both exits. XOR operation.
                 return False
             if left1:
                 queue1.append(left1)
