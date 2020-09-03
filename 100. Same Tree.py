@@ -38,7 +38,7 @@ class Solution:
                 return False
             left1, right1 = node1.left, node1.right
             left2, right2 = node2.left, node2.right
-            if (not left1) ^ (not left2): ## decide whether these two nodes are both exits. XOR operation. return true if both are true.
+            if (not left1) ^ (not left2): ## decide whether these two nodes are both exits. XOR operation: return true if both are the same.
                 return False
             if (not right1) ^ (not right2): ## decide whether these two nodes are both exits. XOR operation.
                 return False
