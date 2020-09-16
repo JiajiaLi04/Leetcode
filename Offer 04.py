@@ -7,14 +7,22 @@
 #         else:
 #             return False
 
+'''
+由于给定的二维数组具备每行从左到右递增以及每列从上到下递增的特点，当访问到一个元素时，可以排除数组中的部分元素。
+
+从二维数组的右上角开始查找。如果当前元素等于目标值，则返回 true。如果当前元素大于目标值，则移到左边一列。如果当前元素小于目标值，则移到下边一行。
+'''
 
 class Solution:
     def findNumberIn2DArray(self, matrix, target):
         i, j = len(matrix) - 1, 0
         while i >= 0 and j < len(matrix[0]):
-            if matrix[i][j] > target: i -= 1
-            elif matrix[i][j] < target: j += 1
-            else: return True
+            if matrix[i][j] > target: 
+                i -= 1
+            elif matrix[i][j] < target:
+                j += 1
+            else:
+                return True
         return False
 
 
