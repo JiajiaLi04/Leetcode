@@ -9,26 +9,6 @@ class TreeNode:
         self.right = right
 
 
-# #####----------------------------------------------
-# class Solution:
-#     def buildTree(self, preorder, inorder) -> TreeNode:
-#         def buildMyTree(preorder_left, preorder_right, inorder_left, inorder_right):
-#             if preorder_left> preorder_right:
-#                 return None
-#             preorder_root = preorder_left
-#             inorder_root = index_inorder[preorder[preorder_root]]
-#             root = TreeNode(preorder[preorder_root])
-#             len_left = inorder_root - inorder_left
-#             root.left = buildMyTree(preorder_left+1, preorder_left+ len_left, inorder_left, inorder_root-1)
-#             root.right = buildMyTree(preorder_left + len_left + 1, preorder_right, inorder_root+1, inorder_right)
-#             return root
-    
-#         n = len(preorder)
-#         index_inorder =  {element: i for i, element in enumerate(inorder)}
-#         return buildMyTree(0, n-1, 0, n-1)
-        
-
-
 # if __name__ == '__main__':
 #     func = Solution()
 
@@ -39,7 +19,9 @@ class TreeNode:
 #     print("it is done")
 # #####----------------------------------------------
 
-
+'''
+https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/solution/qian-xu-bian-li-python-dai-ma-java-dai-ma-by-liwei/
+'''
 
 ## recursive
 class Solution:
