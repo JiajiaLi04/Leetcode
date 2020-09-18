@@ -3,6 +3,13 @@
 #     def fib(self, n: int) -> int:
 #         a, b = 0, 1
 #         for _ in range(n):
+
+'''
+a, b = b, a + b
+When dealing with expressions in python, everything to the right of the ‘=’ operator, i.e. the assignment operator, is evaluated 
+first then assigned to the variables to the left.
+'''
+
 #             a, b = b, a + b
 #         return a % 1000000007
 
