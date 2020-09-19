@@ -27,7 +27,7 @@ class ListNode:
 class Solution:
     def reversePrint(self, head):
         if head:
-            output = self.reversePrint(head.next) + [head.val]
+            output = self.reversePrint(head.next) + [head.val] ## list 可以直接相加。[1]+[2]=[1,2]
             return output
         else:
             return []
