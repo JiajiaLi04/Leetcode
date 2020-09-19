@@ -1,0 +1,60 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - q9_PalindromeNumber1",
+            "request": "launch",
+            "mainClass": "q9_PalindromeNumber1",
+            "projectName": "test_40b4f9a3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - q9_PalindromeNumber",
+            "request": "launch",
+            "mainClass": "q9_PalindromeNumber",
+            "projectName": "test_40b4f9a3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - q7_ReverseInteger",
+            "request": "launch",
+            "mainClass": "q7_ReverseInteger",
+            "projectName": "test_40b4f9a3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - q3_LongestSubstrings",
+            "request": "launch",
+            "mainClass": "q3_LongestSubstrings",
+            "projectName": "test_40b4f9a3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestSubstring",
+            "request": "launch",
+            "mainClass": "LongestSubstring",
+            "projectName": "test_40b4f9a3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TwoSums",
+            "request": "launch",
+            "mainClass": "TwoSums",
+            "projectName": "test_40b4f9a3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FindMax",
+            "request": "launch",
+            "mainClass": "FindMax",
+            "projectName": "test_40b4f9a3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "test_40b4f9a3"
+        }
+    ]
+}
