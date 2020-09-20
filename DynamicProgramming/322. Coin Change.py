@@ -35,29 +35,6 @@
 
 
 # ## 添加备忘录记录每一步的值
-# class Solution:
-#     def coinChange(self, coins, amount: int) -> int:
-#         mem = dict()
-#         def dp(n):
-#             for n in mem:
-#                 return mem[n]
-#             if n==0:
-#                 return 0
-#             if n<0:
-#                 return -1
-#             res= float("inf")
-#             for i in range(len(coins)):
-#                 subproblem = dp(n-coins[i])
-#                 if subproblem==-1:
-#                     continue
-#                 res = min(res, 1 + subproblem)
-#             if res!= float("inf"):
-#                 mem[n] = res
-#             else:
-#                 mem[n] =  -1
-#             return mem[n]
-#         return dp(amount)
-
 class Solution:
     def coinChange(self, coins, amount: int):
         # 备忘录
@@ -73,11 +50,9 @@ class Solution:
                 subproblem = dp(n - coin)
                 if subproblem == -1: continue
                 res = min(res, 1 + subproblem)
-
             # 记入备忘录
             memo[n] = res if res != float('INF') else -1
             return memo[n]
-
         return dp(amount)
 
 if __name__ == '__main__':
