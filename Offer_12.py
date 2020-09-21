@@ -1,4 +1,4 @@
-#深度优先搜索
+# 深度优先搜索
 class Solution:
     def exist(self, board, word) -> bool:
         def dfs(i, j, k):
