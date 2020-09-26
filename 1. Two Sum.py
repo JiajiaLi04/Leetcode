@@ -36,7 +36,6 @@ class Solution:
         return [p,k]
 
 
-
 if __name__ == '__main__':
     func = Solution()
     nums = [2, 11,6, 7, 15,4]
