@@ -1,4 +1,3 @@
-
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
         if len(t)>len(s):
@@ -9,6 +8,7 @@ class Solution:
         for i in range(len(s)):
             curr_index  = len(s) + 1
             if curr_index
+
 
 
         if not s:return 0
