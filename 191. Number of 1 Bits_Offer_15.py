@@ -5,7 +5,7 @@ class Solution:
         while n > 0:
             ## n & 1 to know whether the current digit is 1.
             ans += n & 1
-            n = n>> 1 # n >>= 1
+            n = n >> 1 # n >>= 1
         return ans
 
         
