@@ -5,7 +5,7 @@ class Solution:
         left = 0
         curr_length = 0
         max_length = 0
-        str_set = set()
+        str_set = set() ## hashset
         for i in range(len(s)):
             while s[i] in str_set:           
                 str_set.remove(s[left])
