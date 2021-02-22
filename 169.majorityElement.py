@@ -11,8 +11,8 @@ class Solution:
         #     dct[i] += 1
 
         # return max(nums_count.keys(), key=lambda x: nums_count[x])
-        # return max(nums_count, key=nums_count.get)
-        return max(nums_count.keys(), key=nums_count.get)
+        return max(nums_count, key=nums_count.get)
+        # return max(nums_count.keys(), key=nums_count.get)
 
 
 
