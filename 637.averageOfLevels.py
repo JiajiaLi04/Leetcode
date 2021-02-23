@@ -6,7 +6,7 @@ class TreeNode:
         self.right = None
 
 class Solution:
-    def averageOfLevels(self, root: TreeNode) -> List[float]:
+    def averageOfLevels(self, root: TreeNode):
         def dfs(root: TreeNode, level: int):
             if not root:
                 return
