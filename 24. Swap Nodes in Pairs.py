@@ -5,20 +5,20 @@ class ListNode:
         self.next = next
 class Solution:
     def swapPairs(self, head: ListNode) -> ListNode:
+        if head=null or head.next=null:
+            return head
+        else:
+            newNode = head.next
+            head.next = self.swapPairs(newNode.next)
+            newNode.next.next = head
+        return newNode
 
-
-
-
+        
 if __name__ == '__main__':
-    p = TreeNode(3)
-    p1 = TreeNode(9)
-    p2 = TreeNode(20)
-    p3 = TreeNode(15)
-    p4 = TreeNode(7)
-    p.left = p1
-    p.right = p2
-    p2.left = p3
-    p2.right = p4
+    head = ListNode(1)
+    head.next = ListNode(2)
+    head.next.next = ListNode(3)
+    head.next.next.next = ListNode(4)
 
     func = Solution()
     print(func.swapPairs(p))

@@ -23,7 +23,6 @@ class Solution:
                 output.append((i+1))
         return output
 
-
 if __name__ == '__main__':
     func = Solution()
     nums = [4,3,2,7,8,2,3,1]
